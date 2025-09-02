@@ -1,0 +1,365 @@
+---
+title: 'From Idea to Execution: Writing a PRD That Works - Part 1'
+draft: false
+date: '2025-07-30'
+summary: "An actionable guide to writing PRDs that actually drive execution. Covers what a PRD is, why it matters, and a practical structure: overview, problem, hypothesis, how we arrived (quant + qual + market + MVP), assumptions, and minimum criteria for success—setting you up for requirements and user stories in Part 2."
+---
+
+Welcome, Reader!
+
+Thank you for visiting. This article distills what I’ve learned from
+real-world experience—focused on practical advice that’s actually worked
+for me. If you think writing a Product Requirements Document (PRD) is
+easy, remember:
+
+“Making something simple is hard. Simplicity is the result of a deep
+understanding.”
+
+My goal isn’t to lecture or waste your time; instead, I want to leave
+you with a fresh, actionable perspective on PRDs. By the end of this
+article, I hope you see PRDs— and their power to drive clarity— in a new
+light.
+
+Let’s dive in…
+
+## What is PRD?
+
+A PRD is a simple guide that explains what a product or feature should
+do and why it matters. It covers the goals, key features, and how
+everything is expected to work. This document helps different teams—like
+developers, designers, testers, and business leaders—stay on the same
+page and build the right thing, the right way.
+
+In short, PRD is a blueprint that defines what a product should do,
+outlining its purpose, features, functionality, and behaviour.
+
+Next, I’ll walk you through each component of an effective PRD and
+explain how it serves different stakeholders—engineering, design,
+business, security, and more.
+
+Keep in mind: there’s no one-size-fits-all formula. Product development
+is inherently dynamic, and your PRD should continuously reflect new
+learnings, changing requirements, and stakeholder feedback.
+
+The key is to treat your PRD as a living document—regularly revisiting
+and refining it to ensure clear alignment, communication, and successful
+outcomes across the team.
+
+## Key Components of PRD
+
+A perfect PRD contains below mentioned sections,  
+Topics covered here,
+
+- Overview
+
+- Problem Statement
+
+- Hypothesis
+
+- How did we arrive?
+
+  - Quantitative analysis
+
+  - Qualitative analysis
+
+  - Market and Competitor analysis
+
+  - MVP Analysis
+
+- Assumptions
+
+- Minimum Criteria for Success (MCS)
+
+Topics covered in Part 2,
+
+- User Stories
+
+- Requirements
+
+  - Functional
+
+  - Non-Functional
+
+  - Security / Compliance
+
+  - Dependency
+
+- Acceptance criteria
+
+- Design/UX References
+
+- Scope
+
+- Out of Scope
+
+- Mitigation plans
+
+- Timeline
+
+## Overview
+
+Think of the Overview as your quick ***elevator pitch*** for the PRD.
+Instead of just “summarising what the document is about,” this is your
+chance to hook the reader—especially leaders or busy folks who might
+only read this section!
+
+Keep it simple, punchy, and straight to the point. Highlight what
+problem you’re solving, what you’re proposing, and why it matters. If
+you were chatting with someone in the hallway and had only 30seconds to
+explain the project, what would you say? That’s the energy you want
+here.
+
+Bottom line: This section sets the tone for the whole PRD—make it count,
+but don’t overthink it. Just be clear, confident, and let your
+excitement for the idea show!
+
+## Problem Statement
+
+This is where you spell out exactly what problem you’re solving—not just
+in theory, but with real numbers whenever possible. Don’t just write in
+broad strokes; dig in and use data to make your case.
+
+Try to answer:
+
+- What’s happening right now that isn’t working?
+
+- Who is affected, and how big is the pain point?
+
+- Can you tie it to actual metrics—lost revenue, customer complaints,
+  time wasted, security incidents, or anything else measurable?
+
+For example:
+
+Instead of: “Users find onboarding confusing.”
+
+Try: “x% of new users drop off before finishing onboarding”
+
+Bringing in concrete stats doesn’t just make your problem statement
+stronger—it shows you’ve done your homework and helps anyone reading
+your PRD immediately understand *why* this is worth tackling.
+
+Bottom line: Avoid vague theory. Be specific, be honest, and back up
+your claims with real evidence whenever you can.
+
+## Hypothesis
+
+Hypothesis is a one-liner that acts a tool to align stakeholders with
+your decision. Below mentioned is my sample template,
+
+**We believe that** \<action\> **will result in** \<reaction\>
+**because** \<reason\>.
+
+Example
+
+**We believe that** simplifying the onboarding flow by reducing the
+number of steps from 7 to 4 **will result in** increase the onboarding
+completion rate by 15% **because** users currently drop off due to the
+lengthy process.
+
+Why This Matters
+
+A clear hypothesis helps:
+
+- Align stakeholders on what you’re testing
+
+- Define success metrics upfront
+
+- Focus development on the most impactful changes
+
+- Set expectations realistically
+
+## How did we arrive?
+
+This is your chance to explain the thinking and evidence that led you to
+the hypothesis. Instead of just jumping to what you believe, walk the
+reader through the data, feedback, or patterns you uncovered along the
+way.
+
+Bottom line:Sharing the “how” behind your reasoning sets the stage for
+everyone to understand and buy into the decisions you’re making.
+
+### Quantitative analysis
+
+This is where you get to roll up your sleeves and dig into the numbers.
+In this section, your goal is to analyze real data—user metrics,
+patterns, or trends—to back up your hypothesis with hard evidence.
+
+Example:
+
+Analysis of the last 90 days shows only 47% of users completed
+onboarding, compared to an industry average of 66%. Digging deeper, we
+found that users who interacted with our help widget were 35% more
+likely to finish onboarding, suggesting targeted assistance helps reduce
+friction.
+
+Why this matters:
+
+- Provides objective, data-driven support for your recommendations (not
+  just opinions).
+
+- Helps stakeholders see the scale and urgency of the problem.
+
+- Makes your hypothesis more credible and your next steps easier to
+  justify.
+
+Bottom line:Don’t just tell a story, show it with numbers.
+
+### Qualitative Analysis
+
+While quantitative analysis helps drive decisions through data and
+numbers, qualitative analysis offers a different and equally valuable
+perspective. As a Product Manager, it's essential to step into the
+customer’s shoes to truly understand their problems—this insight often
+guides more empathetic and effective decision-making.
+
+Keep in mind that not all users experience a feature in the same way.
+For instance, the UX of an onboarding page might feel intuitive to
+someone in their early 20s but confusing to a user in their late 30s.
+It’s your responsibility as a PM to identify these patterns and bring
+them to light.
+
+Example:
+
+Interviews with new users showed that while younger participants found
+onboarding intuitive, older users described it as “confusing” and “too
+fast-paced,” with many unsure about next steps. Support chats echoed
+this, with older users requesting more guidance and clarity.
+
+This is where qualitative analysis becomes critical. A successful PM
+stays approachable and consistently connected to users, actively
+listening to their pain points to uncover nuanced insights that
+quantitative data alone can't reveal.
+
+Why it matters:
+
+- Brings empathy into your decision-making—helps you build products *for
+  real people*, not just profiles.
+
+- Surfaces blind spots in user experience that numbers can miss.
+
+- Encourages solutions that are inclusive and resonate across your whole
+  user base.
+
+- Builds stronger relationships with your customers and more trust
+  within your team.
+
+Bottom line:As a PM, your job isn’t just to crunch data—it’s to connect
+with your users and ensure their voices shape your product decisions.
+
+### Market and Competitor analysis
+
+“Timing and location aren’t luck; they’re the quiet rewards of
+preparation.”
+
+This section is where you show you’ve done the homework beyond just
+building a feature—you understand *who* the customer is, *where* the
+market is headed, and exactly *why* now is the moment for your solution.
+
+Why it Matters:
+
+- Launching at the right time and to the right audience can be the
+  difference between breakout success and falling flat.
+
+- Staying aware of competitors helps you avoid blind spots and find
+  opportunities for differentiation.
+
+- Understanding your market ensures you build not just what users *say*
+  they want, but what the broader landscape actually *needs* (and will
+  pay for).
+
+Tips for a Strong Section:
+
+- Use a table or chart for quick-read competitor comparisons
+
+- Highlight gaps in the market that only you address
+
+Bottom line:This is your chance to prove you’re not just building in a
+vacuum.
+
+### MVP Analysis
+
+This section gives you an optional but powerful chance to share what
+happened if you’ve already built a Minimal Viable Product (MVP) or early
+prototype. If you have data, attach your MVP analysis docs and summarize
+the key results right here.
+
+What to cover:
+
+- MVP Outcomes: How did your MVP perform? Include real-world feedback,
+  usage metrics, customer reactions, and any unexpected results.
+
+- Success? Build on It: If your MVP hit its targets, use the learnings,
+  validated features, and positive data to guide (and justify) which
+  requirements become part of the main PRD. Call out what worked and
+  why—this forms a strong foundation for the rest of your plan.
+
+- Failure? Celebrate Learning: If the MVP didn’t deliver as hoped, be
+  open about it! Highlight what you discovered—pain points, missing
+  value, technical or UX flaws, or even misalignment with user needs.
+  Spell out the lessons learned, how those learnings shift your
+  priorities, and what you’ll do differently in the full product.
+
+Why it matters:
+
+- Demonstrates you’re using real evidence to guide product direction—not
+  just building on assumptions.
+
+- Shows you’re learning from both wins and misses.
+
+- Establishes credibility and sets a transparent, iterative tone for the
+  rest of your PRD.
+
+Bottom line:If you’ve run an MVP, let the data and learnings guide your
+next steps.
+
+## Assumptions
+
+This is where you outline what you’re taking as *given*—the things you
+believe to be true as you move toward your solution. Listing your key
+assumptions upfront doesn’t just increase transparency with
+stakeholders—it shows that you’ve thought about “unknowns” and are
+purposeful (not just guessing) about how you plan.
+
+How to make your Assumptions section strong:
+
+- List each key assumption: Spell out the market, technical, user, or
+  process beliefs that drive your decisions.
+
+- Explain your reasoning: Briefly state *why* you think each assumption
+  is valid. Did user research, analytics, industry best practices, or
+  past experience shape your view?
+
+- Tie to impact: Where possible, connect assumptions to possible risks
+  if they prove wrong—and how you’ll address that.
+
+Why this matters:
+
+- Makes your thinking visible—which builds trust and prevents surprise
+  disagreements later.
+
+- Flags which ideas *need to be validated* as the project progresses.
+
+- Gives everyone a head start for risk planning and prioritizing early
+  validation.
+
+Bottom line:Being open about your assumptions—and your logic—gives your
+PRD more credibility and helps everyone get on the same page, right from
+the start.
+
+## Minimum Criteria for Success (MCS)
+
+"Success isn’t just reaching the goal—it’s knowing what goal is worth
+reaching."
+
+This section is absolutely key. Without clear success criteria, nobody
+knows what “winning” actually looks like—and that makes it tough to
+align teams, measure progress, or celebrate real achievements. MCS draws
+the line in the sand: “If we hit these targets, we know the product or
+feature delivered value.”
+
+Bottom line:Set your MCS before you start building and be honest about
+whether your product or feature is truly working.
+
+So far, we've covered how a Product Manager engages with leadership,
+marketing, and fellow PMs. In the next part, we'll focus on sections
+what a PM should communicate to designers, engineers, and QA teams.

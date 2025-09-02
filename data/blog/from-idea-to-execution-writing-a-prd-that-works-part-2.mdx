@@ -1,0 +1,281 @@
+---
+title: 'From Idea to Execution: Writing a PRD That Works - Part 2'
+draft: false
+date: '2025-08-05'
+summary: "Continuation of the practical PRD guide: moves from framing (Part 1) into execution. Covers user stories and requirements (functional and non-functional), with tips to keep teams aligned and ship outcomes, not just documents."
+---
+
+Welcome, Reader!  
+  
+This is a continuation of [Part 1](/blog/from-idea-to-execution-writing-a-prd-that-works-part-1). If you haven’t read that yet, I
+recommend starting there to get the big picture on PRD strategy and the
+leadership perspective.
+
+In the last post, we dove into PRD components that primarily address the
+needs of leadership and management—things like vision, market fit, and
+measurable success. Now, it’s time to get hands-on. In this post, we’ll
+unpack the key factors and details that matter most to engineering and
+design teams.
+
+We’ll shift from high-level strategy to the nuts and bolts of how a PM
+translates vision into real, buildable requirements—making life easier
+(and output better) for the folks actually designing, building, and
+testing your product.
+
+So, let’s jump in and explore what truly moves the needle for engineers
+and designers as you drive your product from concept to reality!
+
+## Topics covered
+
+- User Stories
+
+- Requirements
+
+  - Functional
+
+  - Non-Functional
+
+  - Security / Compliance
+
+  - Dependency
+
+- Acceptance criteria
+
+- Design/UX References
+
+- Scope
+
+- Out of Scope
+
+- Mitigation plans
+
+- Timeline
+
+## User Stories
+
+When translating product ideas into actionable work for engineering and
+design, it’s easy to drown in technical details or write feature lists
+that miss the human angle. That’s where user stories come in—they shift
+the conversation from “what we’re building” to “who we’re building for
+and why.”
+
+A user story is a simple, clear statement written from the perspective
+of the person using your product. It’s usually structured like this:
+
+*“As a \[type of user\], I want to \[take an action\] so that \[I
+achieve a goal or solve a problem\].”*
+
+Bottom line: User stories put user on front and center. Remember, we
+build for users.
+
+## Requirements
+
+Put simply, requirements are anything that’s needed—or anything other
+teams or systems depend on—to build and ship a feature or product
+successfully. Think of them as your checklist for “what must be true”
+before you can call the work done.
+
+Over the years, I’ve found that requirements usually fall into a few key
+buckets (though this can change from project to project): (Here i have
+considered login page)
+
+- **Functional Requirements:**What the product or feature actually
+  *does*. These define the core behavior, capabilities, and
+  interactions.
+
+- *Example: “The app must let users reset their password via email.”*
+
+- **Non-Functional Requirements:**How the product should perform, look,
+  or behave on the backend. This covers things like speed, scalability,
+  reliability, localization, and usability.
+
+- *Example: “After successful login the dashboard must load in under 2
+  seconds for 95% of users.”*
+
+- **Security/Compliance Requirements:**Any rules that ensure your
+  product is safe, meets industry standards, or follows laws (critical
+  in cybersecurity).
+
+- *Example: “Login page must support 2FA/MFA, with strong password
+  policy”*
+
+- **Dependency Requirements:**Anything your feature depends on—other
+  teams, data sources, integrations, or external services that must be
+  in place.
+
+- *Example: “User should have 'Signin with Google' option (OAuth
+  login)”*
+
+Bottom line: Requirements are your roadmap for what needs to happen.
+Being clear (and thorough) here saves a ton of confusion and rework down
+the road!
+
+## Acceptance criteria
+
+This part is crucial because it acts like a weighing scale—it clearly
+defines what “done” looks like for each user story or requirement.
+
+Acceptance criteria set measurable, testable conditions that must be met
+for a feature or product to be considered complete and successful.
+
+They help align expectations between PMs, engineers, designers, and QA
+teams, ensuring there’s no ambiguity about whether a deliverable meets
+the intended goals.Well-written acceptance criteria reduce
+misunderstandings, accelerate development, and provide clear objectives
+for testing and validation
+
+.
+
+Example Acceptance Criteria:
+
+- The user must be able to reset their password via email within 5
+  minutes of request.
+
+- The reset link should only be valid for 15 minutes.
+
+- The login page returns an error message if the password is incorrect
+  or the username doesn't exist.
+
+- Two-factor authentication must be triggered for login from new
+  devices.
+
+- 2FA must be triggered if the user deselects "Remember me for 15 days."
+
+Bottom line:Acceptance criteria are your quality gatekeepers—they ensure
+you build the right thing, and build it right.
+
+## Design/UX References
+
+This section points to all the visual and experiential elements that
+guide the product’s look and feel. It includes wireframes, mockups,
+prototypes, style guides, component libraries, and any existing UX
+research or usability findings that influence the design decisions.
+
+What to include:
+
+- Links to design files (Figma, Sketch, Adobe XD, etc.) (I have only
+  used Figma)
+
+- Style guides and brand guidelines (If you are starting/working on a
+  fresh product this is very important, or if you are part of
+  established organisation you have to refer internal documents)
+
+- User flow diagrams, wireframe (I prefer <u>https://wireframe.cc/</u>)
+  and journey maps
+
+Example:“Refer to the onboarding flow prototype in Figma: \[link\] and
+the company style guide version 3.2 for typography and color standards.”
+
+Bottom line: Including thorough design/UX references ensures your team
+consistently delivers user experiences that match your product
+vision—saving time, reducing confusion, and improving end results.
+
+## Scope
+
+Defining a clear and proper scope is essential—it lays out exactly what
+your product or feature will (and won’t) do, adding crucial clarity on
+objectives and boundaries.
+
+What to include:
+
+- Specific features, functionalities, or user segments that are included
+
+- Deliverables and milestones that must be achieved
+
+- Any constraints or limitations relevant to scope
+
+Example:“For the initial release, this login feature will support
+email/password authentication and OAuth login via Google. SMS-based MFA
+and biometric login are out of scope for this phase.”
+
+## Out of Scope
+
+Just as important as defining what’s in scope is clearly stating what’s
+out of scope. This section sets boundaries on what the product or
+feature will not address in the current phase, helping to manage
+expectations and avoid scope creep.
+
+What to include:
+
+- Features, functions, or user segments explicitly excluded from this
+  release or project.
+
+- Any assumptions about what won’t be tackled in this phase.
+
+- Clarifications on dependencies that won’t be addressed.
+
+Example:“Biometric login and SMS-based MFA are out of scope for this
+release, but will be considered in later phases. For current phase we
+will only have 'Login with Google' whereas 'Login with Facebook' will be
+provided in next phase"
+
+## Mitigation Plans
+
+This section outlines how you plan to address known risks, challenges,
+or uncertainties that could impact your product or feature delivery.
+Having clear strategies in place for potential issues helps reduce
+surprises and keeps the project on track.
+
+What to include:
+
+- Identified risks and their potential impact.
+
+- Specific mitigation actions or fallback plans.
+
+- Owners or responsible teams for executing the mitigation.
+
+- Contingency timelines or criteria for activating the plan.
+
+Example:“If the authentication API integration is delayed, we will use a
+temporary mock server for testing, and adjust the release schedule
+accordingly. Team X will be responsible for this mitigation plan.”
+
+## Timeline
+
+This section outlines the key milestones, deadlines, and phases for your
+product or feature development. A clear timeline helps the team stay on
+target and ensures stakeholders know when to expect progress or
+delivery.
+
+What to include:
+
+- Major phases (e.g., discovery, design, development, testing, launch)
+
+- Key milestones and deadlines
+
+- Dependencies that might impact timelines
+
+- Buffers or contingency time for unexpected delays
+
+Example:
+
+Design phase: May 1 - May 15
+
+Development phase: May 16 - June 30
+
+Testing & QA: July 1 - July 15
+
+Launch: July 20
+
+Bottom line: Establishing a clear timeline creates transparency and
+accountability, helping your team deliver on time and with fewer
+surprises.
+
+## Conclusion
+
+Writing a comprehensive PRD is both an art and a science. It requires
+clear thinking, a deep understanding of your users and market, and
+strong collaboration across teams.
+
+Remember, **a PRD isn’t a one-time document**. It’s a living blueprint
+that should evolve as you learn, test, and iterate. Be open to feedback
+and ready to adapt.
+
+At the end of the day, the goal is simple: **build the right product,
+for the right users**, **at the right time, with as little friction as
+possible.**
+
+Have user centric approach, data driven decision and collaborate closely
+with your team. That’s how great products happen.
+
+Hope you enjoyed and learned, Thanks for reading so far !
