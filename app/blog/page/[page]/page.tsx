@@ -10,6 +10,7 @@ export const generateStaticParams = async () => {
     [
       'From Idea to Execution: Writing a PRD That Works - Part 1',
       'From Idea to Execution: Writing a PRD That Works - Part 2',
+      'Why Porkbun is Winning: The Amul Analogy',
     ].includes(b.title)
   )
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE)
@@ -26,6 +27,7 @@ export default async function Page(props: { params: Promise<{ page: string }> })
         [
           'From Idea to Execution: Writing a PRD That Works - Part 1',
           'From Idea to Execution: Writing a PRD That Works - Part 2',
+          'Why Porkbun is Winning: The Amul Analogy',
         ].includes(b.title)
       )
     )

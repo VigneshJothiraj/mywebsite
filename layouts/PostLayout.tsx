@@ -34,7 +34,8 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
   const { filePath, path, slug, date, title, tags, toc } = content
   const isPrdSeries =
     title === 'From Idea to Execution: Writing a PRD That Works - Part 1' ||
-    title === 'From Idea to Execution: Writing a PRD That Works - Part 2'
+    title === 'From Idea to Execution: Writing a PRD That Works - Part 2' ||
+    title === 'Why Porkbun is Winning: The Amul Analogy'
   const basePath = path.split('/')[0]
 
   return (

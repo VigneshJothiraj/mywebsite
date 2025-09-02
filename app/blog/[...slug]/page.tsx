@@ -85,6 +85,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   const allowedTitles = new Set([
     'From Idea to Execution: Writing a PRD That Works - Part 1',
     'From Idea to Execution: Writing a PRD That Works - Part 2',
+    'Why Porkbun is Winning: The Amul Analogy',
   ])
   const visibleCoreContents = sortedCoreContents.filter((p) => allowedTitles.has(p.title))
   const postIndex = visibleCoreContents.findIndex((p) => p.slug === slug)
