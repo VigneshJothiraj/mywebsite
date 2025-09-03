@@ -85,9 +85,16 @@ function createSearchIndex(allBlogs) {
     siteMetadata?.search?.provider === 'kbar' &&
     siteMetadata.search.kbarConfig.searchDocumentsPath
   ) {
+    const allowedTitles = new Set([
+      'From Idea to Execution: Writing a PRD That Works - Part 1',
+      'From Idea to Execution: Writing a PRD That Works - Part 2',
+      'Why Porkbun is Winning: The Amul Analogy',
+    ])
+    const core = allCoreContent(sortPosts(allBlogs))
+    const visible = core.filter((p) => allowedTitles.has(p.title) && p.draft !== true)
     writeFileSync(
       `public/${path.basename(siteMetadata.search.kbarConfig.searchDocumentsPath)}`,
-      JSON.stringify(allCoreContent(sortPosts(allBlogs)))
+      JSON.stringify(visible)
     )
     console.log('Local search index generated...')
   }
