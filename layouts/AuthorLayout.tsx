@@ -39,6 +39,15 @@ export default function AuthorLayout({ children, content }: Props) {
               <SocialIcon kind="x" href={twitter} />
               <SocialIcon kind="bluesky" href={bluesky} />
             </div>
+            <div className="pt-6">
+              <Image
+                src="/static/images/venn-diagram.png"
+                alt="Skills Venn Diagram"
+                width={400}
+                height={300}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
           </div>
           <div className="prose dark:prose-invert max-w-none pt-8 pb-8 xl:col-span-2">
             {children}
