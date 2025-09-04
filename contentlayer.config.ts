@@ -89,6 +89,7 @@ function createSearchIndex(allBlogs) {
       'From Idea to Execution: Writing a PRD That Works - Part 1',
       'From Idea to Execution: Writing a PRD That Works - Part 2',
       'Why Porkbun is Winning: The Amul Analogy',
+      'Cursor AI: Building Websites Without Writing Code',
     ])
     const core = allCoreContent(sortPosts(allBlogs))
     const visible = core.filter((p) => allowedTitles.has(p.title) && p.draft !== true)

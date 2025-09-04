@@ -13,6 +13,7 @@ export default async function BlogPage(props: { searchParams: Promise<{ page: st
     'From Idea to Execution: Writing a PRD That Works - Part 1',
     'From Idea to Execution: Writing a PRD That Works - Part 2',
     'Why Porkbun is Winning: The Amul Analogy',
+    'Cursor AI: Building Websites Without Writing Code',
   ])
   const filteredPosts = posts.filter((p) => allowedTitles.has(p.title))
   const pageNumber = 1
