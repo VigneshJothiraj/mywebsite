@@ -37,7 +37,8 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
     title === 'From Idea to Execution: Writing a PRD That Works - Part 2' ||
     title === 'Why Porkbun is Winning: The Amul Analogy' ||
     title === 'Cursor AI (Free trial): Building Websites Without Writing Code' ||
-    title === 'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers'
+    title ===
+      'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers'
   const basePath = path.split('/')[0]
 
   return (
