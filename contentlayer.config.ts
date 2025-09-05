@@ -90,6 +90,7 @@ function createSearchIndex(allBlogs) {
       'From Idea to Execution: Writing a PRD That Works - Part 2',
       'Why Porkbun is Winning: The Amul Analogy',
       'Cursor AI (Free trial): Building Websites Without Writing Code',
+      'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers',
     ])
     const core = allCoreContent(sortPosts(allBlogs))
     const visible = core.filter((p) => allowedTitles.has(p.title) && p.draft !== true)
