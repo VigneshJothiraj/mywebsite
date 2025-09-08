@@ -88,6 +88,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
     'Why Porkbun is Winning: The Amul Analogy',
     'Cursor AI (Free trial): Building Websites Without Writing Code',
     'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers',
+    'Data-Driven Decision Making: My Go-To Frameworks for PM Prioritization',
   ])
   const visibleCoreContents = sortedCoreContents.filter((p) => allowedTitles.has(p.title))
   const postIndex = visibleCoreContents.findIndex((p) => p.slug === slug)

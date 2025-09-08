@@ -38,7 +38,8 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
     title === 'Why Porkbun is Winning: The Amul Analogy' ||
     title === 'Cursor AI (Free trial): Building Websites Without Writing Code' ||
     title ===
-      'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers'
+      'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers' ||
+    title === 'Data-Driven Decision Making: My Go-To Frameworks for PM Prioritization'
   const basePath = path.split('/')[0]
 
   return (

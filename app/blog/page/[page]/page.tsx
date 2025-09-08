@@ -13,6 +13,7 @@ export const generateStaticParams = async () => {
       'Why Porkbun is Winning: The Amul Analogy',
       'Cursor AI (Free trial): Building Websites Without Writing Code',
       'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers',
+      'Data-Driven Decision Making: My Go-To Frameworks for PM Prioritization',
     ].includes(b.title)
   )
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE)
@@ -32,6 +33,7 @@ export default async function Page(props: { params: Promise<{ page: string }> })
           'Why Porkbun is Winning: The Amul Analogy',
           'Cursor AI (Free trial): Building Websites Without Writing Code',
           'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers',
+          'Data-Driven Decision Making: My Go-To Frameworks for PM Prioritization',
         ].includes(b.title)
       )
     )

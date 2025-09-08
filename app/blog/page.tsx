@@ -15,6 +15,7 @@ export default async function BlogPage(props: { searchParams: Promise<{ page: st
     'Why Porkbun is Winning: The Amul Analogy',
     'Cursor AI (Free trial): Building Websites Without Writing Code',
     'From Debugging Code to Brainstorming Screens: My Journey Collaborating With Designers',
+    'Data-Driven Decision Making: My Go-To Frameworks for PM Prioritization',
   ])
   const filteredPosts = posts.filter((p) => allowedTitles.has(p.title))
   const pageNumber = 1
